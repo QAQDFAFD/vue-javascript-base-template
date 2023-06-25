@@ -13,13 +13,13 @@
 ### 开发包
 
 -   [x] pinia 安装 + 使用
--   [x] axios 安装 + 使用
+-   [x] axios 安装 + 封装（请求的基本信息+请求拦截器+响应拦截器）+ api 集中管理
 -   [ ] sass 安装 + 全局变量的配置
 -   [x] vue-router 安装 + 使用
 -   [x] animate.css 的引入
--   [x] element 按需引入
+-   [x] element-plus 按需引入
 -   [ ] echarts 按需引入
--   [ ] iconfont 图标库引入
+-   [ ] iconfont 图标库引入 + 使用的组件封装
 
 ## 项目初始化
 
@@ -34,4 +34,4 @@
 -   [ ] `husky` 提交时格式化
 -   [ ] 配置开发包 -> 只允许使用 `pnpm`
 -   [ ] 全局组件（`globalComponent`）的注册
--   [ ] `mock` 数据
+-   [ ] `mock` 的基本数据
