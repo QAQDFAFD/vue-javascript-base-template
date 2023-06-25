@@ -17,7 +17,7 @@
 -   [x] sass 安装 + 全局变量的配置
 -   [x] vue-router 安装 + 使用
 -   [x] animate.css 的引入
--   [x] element 按需引入 + 同时配置 unplugin-auto-import
+-   [x] element 按需引入
 -   [x] echarts 按需引入
 -   [x] iconfont 图标库引入
 
@@ -36,4 +36,4 @@
 -   [x] 配置开发包 -> 统一开发包的使用 -> 只允许使用 `pnpm`
 -   [x] 全局组件（`globalComponent`）的注册
     -   [x] icon组件 -> 如果要使用 iconfont 中的图标，直接复制 svg 即可
--   [x] `mock` 相关数据的配置 -> **模拟后端**
+-   [x] `mockjs` 相关数据的配置 -> **模拟后端**
