@@ -12,9 +12,12 @@ export default defineConfig({
     plugins: [
         vue(),
         AutoImport({
+            imports: ['vue', 'vue-router', 'pinia'],
+            dts: false,
             resolvers: [ElementPlusResolver()]
         }),
         Components({
+            dts: false,
             resolvers: [ElementPlusResolver()]
         }),
         createSvgIconsPlugin({

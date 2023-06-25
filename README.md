@@ -17,7 +17,7 @@
 -   [x] sass 安装 + 全局变量的配置
 -   [x] vue-router 安装 + 使用
 -   [x] animate.css 的引入
--   [x] element 按需引入
+-   [x] element 按需引入 + 同时配置 unplugin-auto-import
 -   [x] echarts 按需引入
 -   [x] iconfont 图标库引入
 

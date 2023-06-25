@@ -1,7 +1,6 @@
 {
-    "name": "vue-base-template",
-    "private": true,
-    "version": "0.0.0",
+    "name": "li-vue",
+    "version": "0.0.3",
     "type": "module",
     "scripts": {
         "dev": "vite",
