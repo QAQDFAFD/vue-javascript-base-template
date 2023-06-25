@@ -3,6 +3,8 @@ import vue from '@vitejs/plugin-vue'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
+import { createSvgIconsPlugin } from 'vite-plugin-svg-icons'
+import { viteMockServe } from 'vite-plugin-mock'
 import path from 'path'
 
 // https://vitejs.dev/config/
@@ -14,6 +16,15 @@ export default defineConfig({
         }),
         Components({
             resolvers: [ElementPlusResolver()]
+        }),
+        createSvgIconsPlugin({
+            // 图标的路径位置
+            iconDirs: [path.resolve(process.cwd(), 'src/assets/icons')],
+            symbolId: 'icon-[dir]-[name]'
+        }),
+        viteMockServe({
+            mockPath: 'mock',
+            enable: true
         })
     ],
     server: {
@@ -33,6 +44,15 @@ export default defineConfig({
         // 配置路径别名
         alias: {
             '@': path.resolve(__dirname, './src')
+        }
+    },
+    // 配置全局变量
+    css: {
+        preprocessorOptions: {
+            scss: {
+                additionalData: '@import "./src/styles/global.scss";',
+                javascriptEnabled: true
+            }
         }
     }
 })
