@@ -11,7 +11,14 @@ module.exports = {
     plugins: ['vue'],
     rules: {
         // 4个空格
-        indent: ['error', 4],
+        indent: [
+            'error',
+            4,
+            {
+                SwitchCase: 1,
+                ignoredNodes: ['ConditionalExpression']
+            }
+        ],
         // 不检查回调函数的字面量
         'n/no-callback-literal': 'off',
         // 变量声明后是否需要空一行

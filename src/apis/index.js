@@ -42,4 +42,13 @@ const login = async params => {
     return result
 }
 
-export { register, login }
+const getUserInfo = async params => {
+    const { username } = params
+    const result = await request({
+        url: `/user/getUserInfo?username=${username}`,
+        method: 'GET'
+    })
+    return result
+}
+
+export { register, login, getUserInfo }
