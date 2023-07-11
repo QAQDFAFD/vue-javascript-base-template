@@ -14,7 +14,12 @@ export default defineConfig({
         AutoImport({
             imports: ['vue', 'vue-router', 'pinia'],
             dts: false,
-            resolvers: [ElementPlusResolver()]
+            resolvers: [ElementPlusResolver()],
+            eslintrc: {
+                enabled: true,
+                filepath: './.eslintrc-auto-import.json',
+                globalsPropValue: true
+            }
         }),
         Components({
             dts: false,
