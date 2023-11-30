@@ -3,7 +3,7 @@ module.exports = {
         browser: true,
         es2021: true
     },
-    extends: ['standard', 'plugin:vue/vue3-essential', 'plugin:prettier/recommended','./.eslintrc-auto-import.json'],
+    extends: ['standard', 'plugin:vue/vue3-essential', 'plugin:prettier/recommended', './.eslintrc-auto-import.json'],
     parserOptions: {
         ecmaVersion: 'latest',
         sourceType: 'module'
@@ -28,6 +28,7 @@ module.exports = {
         camelcase: 'warn',
         quotes: ['error', 'single'],
         'vue/multi-word-component-names': 'off',
-        'prettier/prettier': ['error', { endOfLine: 'auto' }]
+        'prettier/prettier': ['error', { endOfLine: 'auto' }],
+        'no-unused-vars': 'off'
     }
 }

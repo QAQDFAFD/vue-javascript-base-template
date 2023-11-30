@@ -10,6 +10,7 @@
 
 <script setup>
 onMounted(() => {})
+const a = ref(123)
 </script>
 
 <style lang="scss" scoped>
@@ -21,7 +22,7 @@ onMounted(() => {})
     .pic {
         width: 50vw;
         height: 50vh;
-        background: url(https://picgo-use-images.oss-cn-shanghai.aliyuncs.com/images/20230604160200.png) no-repeat
+        background: url(https://picgo-use-images.oss-cn-shanghai.aliyuncs.com/images/20231130092248.png) no-repeat
             center/cover;
     }
 }
