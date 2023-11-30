@@ -1,6 +1,5 @@
 // axios 的配置文件
 import axios from 'axios'
-import { ElMessage } from 'element-plus'
 
 // 创建 axios 实例
 const instance = axios.create({
@@ -53,10 +52,7 @@ instance.interceptors.response.use(
                 message = '连接错误'
                 break
         }
-        ElMessage({
-            type: 'error',
-            message
-        })
+        alert(message)
         // 这里需要返回一个 Promise.reject(err) 用于后续的错误处理
         return Promise.reject(err)
     }
