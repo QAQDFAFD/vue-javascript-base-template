@@ -20,10 +20,12 @@
 -   [x] element 按需引入
 -   [x] echarts 按需引入
 -   [x] iconfont 图标库引入
+-   [x] tailwindcss 的引入
 
 ## 项目初始化
 
 -   [x] 公共样式的编写
+-   [x] css reset -> `style.css`
 -   [x] 典型组件的抽离
     -   [x] SvgIcon：图标组件
 -   [x] `.env.development` + `.env.production` + `.env.test`
