@@ -1,5 +1,6 @@
 import { createApp } from 'vue'
 import './styles/style.css'
+import './styles/global.css'
 import 'animate.css'
 // import ElementPlus from 'element-plus'
 // import 'element-plus/dist/index.css'

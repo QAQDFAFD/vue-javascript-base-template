@@ -53,14 +53,5 @@ export default defineConfig({
         alias: {
             '@': path.resolve(__dirname, './src')
         }
-    },
-    // 配置全局变量
-    css: {
-        preprocessorOptions: {
-            scss: {
-                additionalData: '@import "./src/styles/global.scss";',
-                javascriptEnabled: true
-            }
-        }
     }
 })

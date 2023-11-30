@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 自定义样式 */
+@layer components {
+    .header-primary {
+        @apply text-2xl m-5 ml-0 mt-0;
+        color: red;
+    }
+}
+
+/* 全局变量 */
+:root {
+    --main-color: #ff0000;
+}
+
+/* css common */
+/* 清除浮动 */
+.clearfix:after {
+    content: '.';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.clearfix {
+    *zoom: 1;
+}
+/* 用于测试的样式 */
+.test {
+    background-color: deeppink;
+}
